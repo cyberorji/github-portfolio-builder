@@ -44,7 +44,7 @@ main{{max-width:1000px;margin:auto;padding:64px 24px}}header{{display:flex;gap:2
 img{{width:96px;height:96px;border-radius:24px;border:3px solid var(--accent)}}h1{{margin:0;font-size:clamp(2rem,5vw,4rem)}}h2{{margin-top:48px}}.muted,small{{color:var(--muted)}}.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}}.card{{background:var(--panel);padding:20px;border:1px solid #28334e;border-radius:18px;display:flex;flex-direction:column;gap:8px}}a{{color:var(--accent)}}.button{{margin-top:auto;text-decoration:none;font-weight:700}}footer{{margin-top:48px;color:var(--muted)}}
 </style></head><body><main><header><img src="{avatar}" alt="{name}"><div><h1>{name}</h1><p class="muted">@{escape(profile.get("login", ""))} · {profile.get("followers", 0)} {labels["followers"]}</p></div></header>
 <section><h2>{labels["bio"]}</h2><p>{bio}</p></section><section><h2>{labels["projects"]}</h2><div class="grid">{"".join(cards) or "<p>Henüz public proje bulunamadı.</p>"}</div></section>
-<footer>Generated with GitHub Portfolio Builder · <a href="{escape(profile.get("html_url", "#"))}">GitHub</a></footer></main></body></html>
+<footer>Generated with GitHub Portfolio Builder · <a href="{escape(profile.get("html_url", "#"))}">GitHub</a></footer></main></body></html>"""
 
 
 def main():
